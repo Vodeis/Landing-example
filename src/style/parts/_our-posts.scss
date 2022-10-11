@@ -1,0 +1,45 @@
+.our-posts {
+  @include container;
+  padding: 66px 25px 69px 25px;
+  &__title {
+    @include title;
+  }
+  &__posts-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__post:nth-child(odd) div {
+    margin-right: 25px;
+  }
+  &__post {
+    display: flex;
+    margin-bottom: 32px;
+    &__img {
+      width: 160px;
+      height: 140px;
+      margin-right: 20px;
+    }
+    &__title {
+      @include title;
+      line-height: 30px;
+      margin-bottom: 1px;
+    }
+    &__info {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: $post-info-color;
+      margin-bottom: 13px;
+    }
+    &__info span {
+      margin: 0 10px;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: $text-color;
+    }
+  }
+}

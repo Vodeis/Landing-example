@@ -1,0 +1,6 @@
+.main__image img {
+    @include container;
+    max-width: 100%;
+    display: block;
+    // height: 100%;
+}

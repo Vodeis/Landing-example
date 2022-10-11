@@ -1,0 +1,53 @@
+@media (max-width: 1200px) {
+  .our-posts .our-posts {
+    &__posts-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .instagram .instagram {
+    &__img-container li:last-child {
+      display: none;
+    }
+    &__img-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+    @import 'burger-menu';
+
+
+    .our-posts .our-posts {
+        &__posts-container li:last-child {
+            display: none;
+        }
+        &__post {
+            flex-direction: column;
+            &__img {
+                margin-bottom: 11px;
+            }
+            &__text {
+                display: none;
+            }
+        }
+    }
+    .instagram .instagram {
+        &__img-container li:not(li:first-child) {
+          display: none;
+        }
+        &__img-container {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+        }
+        &__our-page {
+            display: none;
+        }
+      }
+    .footer .footer__contacts-container {
+        flex-direction: column;
+    }
+
+}

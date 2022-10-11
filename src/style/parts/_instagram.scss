@@ -1,0 +1,28 @@
+.instagram {
+  padding: 47px 0 49px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+  &__container {
+    @include container;
+  }
+  &__top-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    @include title;
+  }
+  &__our-page {
+    @include title;
+    font-size: 13px;
+  }
+  &__img-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    &__img img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}

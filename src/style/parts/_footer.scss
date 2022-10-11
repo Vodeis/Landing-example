@@ -1,0 +1,39 @@
+.footer {
+    background: #000000;
+  text-align: center;
+  padding: 66px 0 70px 0;
+  &__title--white {
+    @include title;
+    color: #fff;
+    text-align: center;
+  }
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $text-color;
+    margin-bottom: 37px;
+  }
+}
+.footer__contacts-container {
+  margin-top: 34px;
+    justify-content: center;
+  display: flex;
+  &__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #b9b9b9;
+  }
+  &__text span {
+    margin: 10px;
+  }
+}
+.footer-container {
+    max-width: 624px;
+    margin: 0 auto;
+}
